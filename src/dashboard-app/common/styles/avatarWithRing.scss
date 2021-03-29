@@ -1,0 +1,15 @@
+@import '../../../styles/colors.scss';
+
+.image-wrapper {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 2px solid $iceBlue;
+  overflow: hidden;
+
+  justify-content: center;
+  @media (min-width: 768px) {
+    height: 40px;
+    width: 40px;
+  }
+}

@@ -1,0 +1,76 @@
+.document-attacher {
+  width: 100%;
+
+  .file-list {
+    display: flex;
+    padding: 0px 20px;
+
+    .file-badge {
+      display: flex;
+      align-items: center;
+      width: 9%;
+      border-radius: 1px;
+      border: 1px solid #bdbdbd;
+      margin-right: 10px;
+
+      .url-text {
+        width: 100%;
+        background-color: #fff;
+        padding: 5px;
+        display: flex;
+
+        a {
+          font-size: 13px;
+          margin-right: 10px;
+          margin-bottom: 5px;
+          width: 100%;
+
+          .file-details {
+            // display: flex;
+            svg {
+              margin-right: 20px;
+            }
+
+            .file-text {
+              // display: flex;
+              // align-items: center;
+            }
+          }
+        }
+
+        span {
+          color: #bdbdbd;
+        }
+      }
+
+      .remove-btn {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #fff;
+        position: absolute;
+        cursor: pointer;
+        left: 65px;
+        bottom: 75px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+          font-size: 9px;
+          color: #333;
+        }
+      }
+    }
+  }
+
+  .error-section {
+    padding: 0px 20px;
+
+    p {
+      color: #e57373;
+      font-size: 11px;
+    }
+  }
+}

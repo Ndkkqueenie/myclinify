@@ -1,0 +1,111 @@
+@import '../01-colors/colors.scss';
+
+.paginate {
+    display: flex;
+    padding: 15px 2px;
+    justify-content: center;
+    flex-direction: column;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .link-more {
+      display: flex;
+      align-items: center;
+    }
+
+    .record-created {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      @media (min-width: 768px) {
+        margin: 0;
+      }
+      svg {
+        margin-right: 0.5rem;
+        align-self: center;
+        path {
+          fill: $darkBlue;
+        }
+      }
+      h3 {
+        font-size: 19px;
+        align-self: center;
+        font-weight: 500;
+      }
+      .dropdown-icon {
+        align-self: center;
+        margin-left: 0.15rem;
+        position: relative;
+        cursor: pointer;
+        .dropdown-menu {
+          left: -156px !important;
+        }
+        .nav-link {
+          cursor: pointer;
+          padding: 5px 0px;
+
+          svg {
+            transform: scale(0.5);
+            fill: $black;
+          }
+        }
+      }
+    }
+    .loading_paginate {
+      display: flex;
+
+      .loader-wrapper {
+        padding-right: 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      .pagination {
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+
+        .navigate-pagination {
+          display: flex;
+          margin-top: 10px;
+          flex-direction: column;
+
+          @media (min-width: 768px) {
+            flex-direction: row;
+            justify-content: space-between;
+            margin-top: 0;
+          }
+          .select-limit-section {
+            display: flex;
+            width: 180px;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+
+            .text-around {
+              display: flex;
+              align-items: center;
+
+              p {
+                margin-bottom: 0px !important;
+                font-size: 12px;
+              }
+            }
+
+            @media (min-width: 992px) {
+              margin-bottom: 0;
+            }
+          }
+          .select-offset-section {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            @media only screen and (min-width: 768px) {
+              margin-top: 0;
+            }
+          }
+        }
+      }
+    }
+  }

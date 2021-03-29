@@ -1,0 +1,24 @@
+.toggler_wrapper {
+  display: flex;
+  align-items: center;
+  width: 40%;
+  padding-top: 10px;
+  .global_record_toggler {
+    .switch {
+      display: flex;
+      justify-content: center;
+    }
+
+    .creator-text {
+      display: flex;
+      width: 100%;
+      margin-top: -5px;
+  
+      span {
+        font-size: 10px;
+        color: #fff;
+        text-align: center;
+      }
+    }
+  }
+}

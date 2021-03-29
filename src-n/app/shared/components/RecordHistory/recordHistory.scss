@@ -1,0 +1,28 @@
+@import '../01-colors/colors.scss';
+
+.record-history {
+  p {
+    font-size: 11px;
+    color: $tintGrey;
+    margin-bottom: 0.2rem;
+  }
+};
+
+.padded {
+  padding-top: 50px;
+  padding-left: 15px;
+}
+
+.padded-left {
+  padding-left: 15px;
+}
+
+.padded-right {
+  padding-right: 15px;
+}
+
+.small-text {
+  p {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,72 @@
+@import '../../styles/colors.scss';
+
+.upload_image {
+  display: flex;
+  align-items: center;
+  .profile-pic {
+      border-radius: 50%;
+      border: 2px solid $iceBlue;
+      height: 80px;
+      width: 80px;
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: multiply;
+      vertical-align: middle;
+      text-align: center;
+      color: transparent;
+      transition: all .3s ease;
+      text-decoration: none;
+      cursor: pointer;
+position: relative;
+      &:hover {
+          background-color: rgba(0, 0, 0, .5);
+          z-index: 10000;
+          color: #fff;
+          transition: all .3s ease;
+          text-decoration: none;
+      }
+          span {
+              display: inline-block;
+              padding-top: 4.5em;
+              padding-bottom: 4.5em;
+          }
+          img{
+              position: absolute;
+              right: 0;
+              bottom: 10%;
+              width: 20px;
+              height: 20px;
+          }
+      }
+  
+
+  input[type="file"] {
+      display: none;
+      cursor: pointer;
+  }
+
+  h5 {
+      font-weight: bold;
+      font-size: 16px;
+      color: #00274A;
+      margin-left: 16px;
+  }
+}
+
+.text-input-wrapper {
+    display: flex;
+    width: 100%;
+    .input-section {
+        width: 100%;
+    }
+    .visibility-icon-section {
+        position: absolute;
+        right: 21px;
+        bottom: 18px;
+    }
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 10px;
+}

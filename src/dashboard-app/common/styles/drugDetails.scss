@@ -1,0 +1,49 @@
+.drug-details {
+  min-height: 150px;
+  min-width: 650px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 0px 15px 10px 15px;
+
+  .content {
+    border: 1px solid #444;
+    border-radius: 5px;
+    min-height: 650px;
+    padding: 5px 10px 10px 10px;
+    min-width: 250px;
+
+
+    h3 {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .detail {
+      margin-bottom: 10px;
+      h5 {
+        u {
+          font-size: 13px;
+          font-weight: bold;
+        }
+      }
+
+      .label {
+        font-weight: bold;
+        font-size: 11px;
+      }
+
+      .prescribable-names {
+        margin-bottom: 15px;
+        border-bottom: 1px solid gray;
+        span {
+          font-size: 11px;
+        }
+
+        .info-group {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

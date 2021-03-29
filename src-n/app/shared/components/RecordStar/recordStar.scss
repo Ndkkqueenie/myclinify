@@ -1,0 +1,24 @@
+.green-sterisk, .yellow-sterisk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+
+  span {
+    margin-top: 9px;
+    font-size: 25px;
+  }
+}
+
+.green-sterisk {
+  span {
+    color: green;
+  }
+}
+
+.yellow-sterisk {
+  span {
+    color: #f57f17;
+  }
+}

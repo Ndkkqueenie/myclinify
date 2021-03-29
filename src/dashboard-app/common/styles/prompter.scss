@@ -1,0 +1,18 @@
+.prompter {
+  padding: 25px 25px 35px 25px;
+  width: 650px;
+
+  .message-wrapper {
+    text-align: center;
+  }
+
+  .action-section {
+    margin-top: 25px;
+    display: flex;
+    justify-content: flex-end;
+
+    .cancel-button {
+      margin-right: 8px;
+    }
+  }
+}

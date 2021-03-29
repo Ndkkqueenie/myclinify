@@ -1,0 +1,63 @@
+@import '../01-colors/colors.scss';
+
+.badge-input {
+  padding: 12px 15px;
+  width: 100%;
+
+  .input-w-badge-wrapper {
+    position: relative;
+    display: flex;
+    border: 1px solid $pseudoAsh;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 38px;
+
+    .badges-wrapper {
+      max-width: 80%;
+      display: flex;
+
+      .badges {
+        display: flex;
+        align-items: center;
+        overflow-x: scroll;
+
+        .badge {
+          color: #fff;
+          background-color: $iceBlue;
+          margin-right: 8px;
+          height: 85%;
+          border-radius: 4px;
+
+          .badge-content-wrapper {
+            display: flex;
+            align-items: center;
+            height: 100%;
+
+            .text {
+              margin-right: 15px;
+              font-size: 14px;
+            }
+
+            .cancel {
+              display: flex;
+              color: #fff;
+              width: 8px;
+              height: 8px;
+              text-align: center;
+              border-radius: 50%;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+    input {
+      border: none;
+      font-size: 14px;
+      width: 100%;
+      min-width: 20%;
+    }
+  }
+}

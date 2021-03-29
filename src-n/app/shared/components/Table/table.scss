@@ -1,0 +1,116 @@
+@import 'assets/styles/01-colors/colors.scss';
+
+.main-table {
+  width: 100%;
+
+  .table-wrap {
+    display: block;
+    max-width: 100%;
+    overflow: scroll;
+    max-height: calc(100vh - 230px);
+    min-height: 100%;
+    padding: 0px 32px;
+    margin-top: 10px;
+    height: 100%;
+
+  .table-wrapper {
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.15);
+    width: 100%;
+
+    table {
+      width: 100%;
+      border-spacing: 0;
+      margin-bottom: 30px;
+      thead {
+        tr {
+          height: 75px;
+          border: none;
+          th {
+            position: sticky;
+            top: 0;
+            background-color: $white;
+            z-index: 10;
+            margin: 0;
+            padding: 8px 12px;
+            font-weight: 500;
+
+            text-align: left;
+            font-size: 14px;
+            color: $darkBlue;
+            width: fit-content;
+            height: inherit;
+            @media (max-width: 1399px) {
+              max-width: 95px;
+            }
+            &:nth-child(2) {
+              width: 46px;
+            }
+            .checkbox {
+              max-width: 100%;
+              position: relative;
+            }
+          }
+        }
+      }
+
+      tbody {
+        height: 230px;
+        overflow-y: auto;
+        width: 100%;
+        background: $white;
+        tr {
+          height: 65px;
+          overflow: hidden;
+          white-space: nowrap;
+          max-width: 100%;
+          &:hover {
+            background-color: $secondaryBg;
+            cursor: pointer;
+          }
+          &:last-child {
+            td {
+              border-bottom: 0;
+            }
+          }
+          td {
+            margin: 0;
+            padding: 8px 12px;
+            border-top: 1px solid $lightAsh;
+            font-weight: 400;
+            font-size: 14px;
+            color: $black;
+            position: relative;
+            .checkbox {
+              max-width: 100%;
+              position: relative;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .round {
+              input {
+                width: 100%;
+                position: absolute;
+              }
+              label {
+                margin-bottom: 0;
+              }
+            }
+
+            &:not(:last-child) {
+              overflow-x: hidden;
+            }
+            text-overflow: ellipsis;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+.is-modal {
+  min-height: 380px;
+}
+
+}

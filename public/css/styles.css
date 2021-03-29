@@ -1,0 +1,14 @@
+body {
+  background-color: beige;
+  color: red;
+}
+
+@font-face {
+  font-family: Poppins-Bold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url(../fonts/Poppins-regular.ttf);
+}

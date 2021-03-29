@@ -1,0 +1,60 @@
+@import '../01-colors/colors.scss';
+
+.MuiFormControl-root {
+    .MuiOutlinedInput-root {
+        border-radius: 4px !important;
+        padding-right: 0 !important;
+
+        &.Mui-disabled {
+            background: $lightGrey;
+        }
+
+        .MuiInputBase-input {
+            font-size: 14px !important;
+            padding: 0px 0px 0px 10px !important;
+            outline: none !important;
+            font-weight: normal !important;
+            color: $black;
+            height: 38px !important;
+
+            &.Mui-disabled {
+                color: $disabled;
+            }
+        }
+
+        .MuiInputAdornment-root {
+            .MuiIconButton-root {
+                padding: 5px 10px !important;
+                border-radius: 0% !important;
+            }
+        }
+    }
+}
+
+.MuiPickersToolbarText-toolbarBtnSelected, .MuiPickersToolbarText-toolbarTxt {
+  color: #00274a !important;
+}
+
+.MuiSvgIcon-root {
+  fill: #00274a !important;
+}
+
+.PrivateTabIndicator-colorSecondary-7, .PrivateTabIndicator-colorSecondary-27, .PrivateTabIndicator-root-13, .MuiTabs-indicator {
+  background-color: #00274a !important;
+}
+
+.MuiButton-textPrimary {
+  color: #00abe2 !important;
+}
+
+.Mui-InputBase-root:focus {
+  border: 2px solid #111 !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #00274a !important;
+}
+
+.MuiPickersClock-pin, .MuiPickersClockPointer-pointer, .MuiPickersDay-daySelected, .MuiPickersToolbar-toolbar, .MuiPickerDTTabs-tabs, .MuiPickersClockNumber-clockNumberSelected {
+  background-color: #00abe2 !important;
+}

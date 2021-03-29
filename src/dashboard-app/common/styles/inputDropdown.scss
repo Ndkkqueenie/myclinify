@@ -1,0 +1,52 @@
+.input-dropdown {
+  width: 100%;
+
+  .full-width {
+    width: 100%;
+  }
+
+  .half-width {
+    width: 50%;
+  }
+
+  .dropdown-wrapper {
+    padding: 0px 19px 12px 19px;
+    .dropdown-section {
+      position: relative;
+      .options {
+        .options-loader {
+          text-align: center;
+        }
+        border: 1px solid #eeeeee;
+        border-radius: 4px;
+        width: 100%;
+        position: absolute;
+        z-index: 2;
+        max-height: 330px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        background: white;
+        overflow-y: auto;
+        box-shadow: 1px 1px 10px 1px #e0e0e0;
+        .option {
+          padding: 21px 10px 0px 10px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          cursor: pointer;
+          font-size: 14px;
+
+          div {
+            overflow-x: hidden;
+          }
+        }
+        .option:hover {
+          background-color: #e3f2fd;
+        }
+      }
+    }
+  }
+}

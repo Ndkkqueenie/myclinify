@@ -1,0 +1,214 @@
+.overview-row {
+  width: 100%;
+  .col-12 {
+    padding-right: 0px;
+    padding-left: 0px;
+    @media (min-width: 768px) {
+      padding-right: 15px;
+      padding-left: 15px;
+    }
+  }
+  .patient-details {
+    background: #ffffff;
+    border-radius: 12px;
+    margin: 0 0 2rem 0;
+
+    .summary {
+      padding: 15px 10px;
+
+      @media (min-width: 768px) {
+        padding: 20px;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h3 {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #666666;
+      }
+
+      .image-wrapper {
+        margin: 10px 0;
+        height: 86px;
+        width: 86px;
+        img {
+          border-radius: 50%;
+        }
+      }
+      .profile-progress {
+        width: 100%;
+        padding: 0 1rem;
+        margin: 1rem 0;
+
+        .progress {
+          position: relative;
+          height: 5px;
+          width: 100%;
+          background: #e1e1e1;
+          border-radius: 10px;
+          overflow: hidden;
+
+          .progress-bar {
+            position: absolute;
+            background: #00abe2;
+            border-radius: 10px;
+            left: 0;
+            height: 100%;
+            width: 50%;
+          }
+        }
+
+        p {
+          text-align: center;
+          font-size: 10px;
+          color: #00abe2;
+        }
+      }
+      h4 {
+        font-size: 16px;
+        text-align: center;
+        color: #333333;
+      }
+
+      h5 {
+        font-size: 14px;
+        text-align: center;
+        color: #666666;
+      }
+    }
+
+    .personal-information,
+    .next-of-kin,
+    .coverage_information,
+    .dependent {
+      padding: 10px 15px;
+
+      @media (min-width: 768px) {
+        padding: 20px;
+      }
+      border-top: 1px solid #f1f1f1;
+
+      h3 {
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #00274a;
+        margin: 1rem 0;
+      }
+
+      .details {
+        display: flex;
+        justify-content: space-between;
+        margin: 0.5rem 0;
+        .title {
+          font-weight: 600;
+          font-size: 13px;
+          color: #000;
+          margin-right: 1.5rem;
+          display: flex;
+          align-items: center;
+          line-height: inherit;
+          @media (min-width: 768px) {
+            font-size: 14px;
+          }
+        }
+
+        .result {
+          font-weight: normal;
+          font-size: 13px;
+          color: #333333;
+          display: block;
+    align-items: center;
+    position: relative;
+    max-width: 62%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    &:hover{
+      text-overflow: initial;
+      white-space: normal;
+    word-break: break-word;
+    }
+          @media (min-width: 768px) {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .patient-hospital-record {
+    .card {
+      &:not(:last-child) {
+        margin: 0 0 2rem 0;
+      }
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px;
+
+      .title {
+        display: flex;
+        .icon {
+          background: #00abe2;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 30px;
+          min-width: 30px;
+          height: 30px;
+          color: #fff;
+        }
+
+        h3 {
+          margin-left: 1rem;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 20px;
+          text-transform: uppercase;
+          color: #00274a;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .contents {
+        margin-top: 1rem;
+        background: #fafafa;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 15px;
+        @media (min-width: 768px) {
+          flex-direction: row;
+          flex-wrap: wrap;
+        }
+        .content {
+          width: 25%;
+          padding: 10px 5px;
+          @media (min-width: 768px) {
+            padding: 5px 15px;
+          }
+          .title {
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 15px;
+            color: #000000;
+            text-transform: capitalize;
+          }
+
+          .result {
+            font-size: 14px;
+            line-height: 17px;
+            margin-top: 0.4rem;
+            color: #000000;
+          }
+        }
+      }
+    }
+  }
+}

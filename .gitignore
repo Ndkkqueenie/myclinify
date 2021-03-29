@@ -1,0 +1,14 @@
+node_modules
+.DS_Store
+public/bundle.js
+public/bundle.js.map
+.env
+build
+.history/
+.idea/
+/.vscode
+/debug.log
+/hmos.json
+/admissions.json
+/my-health.json
+/appointments.json

@@ -1,0 +1,48 @@
+@import '../../../styles/colors.scss';
+
+.patient-record-list-tab {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: #fff;
+  z-index: 200;
+  padding: 10px 0;
+  overflow-x: auto;
+  width: 100%;
+  flex-direction: column;
+  @media (min-width: 769px) {
+    flex-direction: row;
+  }
+
+  .delete-archive-section {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    @media (min-width: 769px) {
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      margin-bottom: 0;
+    }
+    .button-tooltip {
+      color: $darkBlue !important;
+      font-weight: 500;
+      background-color: transparent !important;
+      border: none !important;
+      &:after {
+        border: none !important;
+      }
+      &.place-top {
+        &:after {
+          border: none !important;
+        }
+      }
+    }
+  }
+}
+.search-tab-section {
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,23 @@
+@import '../../../styles/colors.scss';
+
+.register-container-wrapper {
+  .terms-register {
+    width: 100%;
+    height: 50vh;
+    font-weight: 300;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  
+    span {
+      cursor: pointer;
+      a {
+        color: $iceBlue;
+      }
+    }
+  }
+}
